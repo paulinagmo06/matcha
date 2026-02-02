@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+body {
+	background-color: #FFF6FC;
+	font-family: "Andale Mono", "monospace";
+	color: #0F2503;	
+}
+
+/*heading*/
+h1, h2, h3 {
+	font-family: "Andale Mono", monospace;
+	text-align: center;
+}
+
+/*body paragraphs*/
+section p {
+	font-family: "Helvetica", sans-serif;
+	line-height: 1.6;
+}
+
+/*containers*/
+#container {
+	width: 900px;
+	margin: 0 auto;
+	background-color: #FFF6FC;
+	border: 2px solid #8F99FB;
+	padding: 20px;
+}
+
+/*header*/
+header {
+	font-family: "Andale Mono", monospace;
+	text-align: center;
+}
+
+header > h1 {
+	margin: 0;
+}
+
+.subtitle {
+	color: #FFF6FC;
+	display: none;
+}
+
+header:hover .subtitle {
+    display: block;
+}
+
+/*navigation bar*/
+.topnav {
+  background-color: #CCC6B9;
+  overflow: hidden;
+}
+
+.topnav a {
+ 	float: right;
+ 	color: #FFF;
+ 	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+	font-family: "Andale Mono", monospace;
+ 	font-size: 17px;
+}
+
+/*change the color of links on hover */
+.topnav a:hover {
+  background-color: #8F99FB;
+  color: #FFF;
+}
+
+/*add a color to the active/current link */
+.topnav a.active {
+  background-color: #0F2503;
+  color: white;
+}
+
+/*images (layout and size)*/
+.img-left {
+	float: left;
+	width: 400px;
+	height: 400px;
+	margin-right: 40px;
+	border: hidden;
+}
+
+.img-right {
+	float: right;
+	width: 400px;
+	height: 400px;
+	margin-left: 40px;
+	border: hidden;	
+}
+
+/*footer*/
+footer {
+	position: relative;
+    text-align: center;
+    border-top: 2px solid #0F2503;
+    padding-top: 10px;
+    background-color: #CCC6B9;
+    color: #FFF;
+}
+
+/*clear floats*/
+.clear {
+	clear: both;
+}
