@@ -4,30 +4,64 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: #FFF6FC;
-	font-family: "Andale Mono", "monospace";
+	background-color: #E6E2BD;
 	color: #0F2503;	
 }
 
-/*heading*/
-h1, h2, h3 {
-	font-family: "Andale Mono", monospace;
+/*main heading*/
+h1 {
+	font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
 	text-align: center;
+	color: #133200;
+}
+
+.subtitle {
+	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: italic;
+	color: #2E2C29;
+}
+
+/*headings*/
+h2, h3 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 390;
+  font-style: italic;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+	text-align: left;
+	color: #133200;
+	padding-top: 90px
 }
 
 /*body paragraphs*/
 section p {
-	font-family: "Helvetica", sans-serif;
+  	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: normal;
 	line-height: 1.6;
+	text-align: justify;
+	color: #2E2C29;
 }
 
 /*containers*/
 #container {
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto;
 	background-color: #FFF6FC;
 	border: 2px solid #8F99FB;
-	padding: 20px;
+	border-radius: 8px;
+	padding: 40px;
 }
 
 /*header*/
@@ -55,7 +89,7 @@ header:hover .subtitle {
   overflow: hidden;
 }
 
-.topnav a {
+.topnav a:link {
  	float: right;
  	color: #FFF;
  	text-align: center;
@@ -72,10 +106,16 @@ header:hover .subtitle {
 }
 
 /*add a color to the active/current link */
-.topnav a.active {
+.topnav a:active {
   background-color: #0F2503;
   color: white;
 }
+
+/*how the link will look when visited*/
+.topnav a:visited {
+	color: #FFD1F9;
+}
+
 
 /*images (layout and size)*/
 .img-left {
@@ -83,6 +123,7 @@ header:hover .subtitle {
 	width: 400px;
 	height: 400px;
 	margin-right: 40px;
+	border-radius: 11px;
 	border: hidden;
 }
 
@@ -91,6 +132,7 @@ header:hover .subtitle {
 	width: 400px;
 	height: 400px;
 	margin-left: 40px;
+	border-radius: 11px;
 	border: hidden;	
 }
 
