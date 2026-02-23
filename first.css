@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+	background-color: #E6E2BD;
+	color: #0F2503;	
+}
+
+/*containers*/
+#container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #FFF6FC;
+	border: 2px solid #8F99FB;
+	border-radius: 8px;
+	padding: 40px;
+}
+
+/*main heading*/
+h1 {
+	font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+	text-align: center;
+	color: #133200;
+}
+
+.subtitle {
+	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: italic;
+	color: #2E2C29;
+}
+
+/*headings*/
+h2, h3 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 390;
+  font-style: italic;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+	text-align: left;
+	color: #133200;
+	padding-top: 10px
+}
+
+/*body paragraphs*/
+section p {
+  	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: normal;
+	line-height: 1.6;
+	text-align: justify;
+	color: #2E2C29;
+}
+
+/*header*/
+header {
+	font-family: "Andale Mono", monospace;
+	text-align: center;
+}
+
+header > h1 {
+	margin: 0;
+}
+
+.subtitle {
+	color: #000000;
+	display: none;
+}
+
+header:hover .subtitle {
+    display: block;
+}
+
+/*navigation bar*/
+.topnav {
+  background-color: #36522A;
+  overflow: hidden;
+	border-radius: 6px;
+}
+
+.topnav a:link {
+ 	float: right;
+ 	color: #FFF;
+ 	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+	font-family: "Andale Mono", monospace;
+ 	font-size: 17px;
+}
+
+/*change the color of links on hover */
+.topnav a:hover {
+  background-color: #8F99FB;
+  color: #FFF;
+}
+
+/*add a color to the active/current link */
+.topnav a:active {
+  background-color: #0F2503;
+  color: white;
+}
+
+/*how the link will look when visited*/
+.topnav a:visited {
+	color: #FFDCE2;
+}
+
+
+/*images (layout and size)*/
+.img-left {
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin-right: 40px;
+	border-radius: 11px;
+	border: hidden;
+}
+
+.img-right {
+	float: right;
+	width: 300px;
+	height: 300px;
+	margin-left: 40px;
+	border-radius: 11px;
+	border: hidden;	
+}
+
+/*benefits list*/
+.benefits {
+	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: normal;
+	line-height: 1.6;
+	text-align: justify;
+	color: #2E2C29;
+}
+
+/*footer*/
+footer {
+	position: relative;
+    text-align: center;
+    border-top: 2px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+    background-color: #CCC6B9;
+    color: #FFF;
+}
+
+/*clear floats*/
+.clear {
+	clear: both;
+}

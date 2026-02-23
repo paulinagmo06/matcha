@@ -3,9 +3,26 @@
 *{
 	box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-	background-color: #E6E2BD;
+	display: flex;
+ 	flex-direction: column;
+	background-color: #EDC3CD;
 	color: #0F2503;	
+}
+
+/*containers*/
+#container {
+	width: 2000px;
+	margin: 0 auto;
+	background-color: #FFF6FC;
+	border: 2px solid #8F99FB;
+	border-radius: 8px;
+	padding: 40px;
 }
 
 /*main heading*/
@@ -29,71 +46,22 @@ h1 {
 	color: #2E2C29;
 }
 
-/*headings*/
-h2, h3 {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: 390;
-  font-style: italic;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
-	text-align: left;
-	color: #133200;
-	padding-top: 90px
-}
-
-/*body paragraphs*/
-section p {
-  	font-family: "DM Sans", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 333px;
-  	font-style: normal;
-	line-height: 1.6;
-	text-align: justify;
-	color: #2E2C29;
-}
-
-/*containers*/
-#container {
-	width: 1000px;
-	margin: 0 auto;
-	background-color: #FFF6FC;
-	border: 2px solid #8F99FB;
-	border-radius: 8px;
-	padding: 40px;
-}
-
-/*header*/
-header {
-	font-family: "Andale Mono", monospace;
-	text-align: center;
-}
-
-header > h1 {
-	margin: 0;
-}
-
-.subtitle {
-	color: #FFF6FC;
-	display: none;
-}
-
-header:hover .subtitle {
-    display: block;
-}
-
 /*navigation bar*/
 .topnav {
-  background-color: #CCC6B9;
-  overflow: hidden;
+ 	background-color: #36522A;
+ 	overflow: hidden;
+	margin-left: auto;
+	border-radius: 6px;
+	
+	
+	display: flex;
+ 	justify-content: flex-end;
 }
 
 .topnav a:link {
- 	float: right;
  	color: #FFF;
  	text-align: center;
- 	padding: 14px 16px;
+ 	padding: 15px 16px;
  	text-decoration: none;
 	font-family: "Andale Mono", monospace;
  	font-size: 17px;
@@ -113,35 +81,123 @@ header:hover .subtitle {
 
 /*how the link will look when visited*/
 .topnav a:visited {
-	color: #FFD1F9;
+	color: #FFDCE2;
 }
 
+.intro {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;        
+  text-align: center;
+}
+
+.cta-heading {
+ 	display: flex;
+ 	align-items: center;
+	justify-content: center;
+ 	gap: 5px; /*space between text and star*/
+}
+
+.img-star {
+	width: 80px;
+ 	height: auto;
+	filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.08));
+	transform: rotate(-12deg);
+ 	transition: transform 0.3s ease;
+}
+.img-star:hover {
+ 	transform: rotate(10deg);
+}
+
+/*headings*/
+h2, h3 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 390;
+  font-style: italic;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+	text-align: center;
+	color: #133200;
+	padding-top: 10px
+}
+
+.comfort {
+	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: normal;
+	line-height: 1.6;
+	text-align: center;
+	color: #2E2C29;
+}
+
+/*body paragraphs*/
+section p {
+  	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: normal;
+	line-height: 1.6;
+	text-align: justify;
+	color: #2E2C29;
+}
+
+/*header*/
+header {
+	font-family: "Andale Mono", monospace;
+	text-align: center;
+}
+
+header > h1 {
+	margin: 0;
+}
+
+.subtitle {
+	color: #000000;
+}
+
+header:hover .subtitle {
+    display: block;
+}
+
+/*reveal matcha phrase*/
+
+.hidden {
+	display: none;
+}
+
+#matchabutton {
+	background-color: #36522A;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 25px;
+	font-family: "DM Sans", sans-serif;
+	cursor: pointer;
+}
+
+#matchabutton:hover {
+	background-color: #8F99FB;
+}
 
 /*images (layout and size)*/
-.img-left {
-	float: left;
-	width: 400px;
-	height: 400px;
-	margin-right: 40px;
-	border-radius: 11px;
+.img-center {
+	float: none;
+	width: 600px;
+	height: 800px;
+	border-radius: 30px;
 	border: hidden;
-}
-
-.img-right {
-	float: right;
-	width: 400px;
-	height: 400px;
-	margin-left: 40px;
-	border-radius: 11px;
-	border: hidden;	
 }
 
 /*footer*/
 footer {
 	position: relative;
     text-align: center;
-    border-top: 2px solid #0F2503;
+    border-top: 2px;
     padding-top: 10px;
+	padding-bottom: 10px;
     background-color: #CCC6B9;
     color: #FFF;
 }
