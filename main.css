@@ -29,7 +29,7 @@ body {
 h1 {
 	font-family: "Fraunces", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 650;
   font-style: normal;
   font-variation-settings:
     "SOFT" 0,
@@ -162,6 +162,20 @@ header:hover .subtitle {
     display: block;
 }
 
+.fun-intro {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*images (layout and size)*/
+.img-center {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 500px;
+	height: 300px;
+	border-radius: 30px;
+}
+
 /*reveal matcha phrase*/
 
 .hidden {
@@ -180,15 +194,6 @@ header:hover .subtitle {
 
 #matchabutton:hover {
 	background-color: #8F99FB;
-}
-
-/*images (layout and size)*/
-.img-center {
-	float: none;
-	width: 600px;
-	height: 800px;
-	border-radius: 30px;
-	border: hidden;
 }
 
 /*footer*/

@@ -20,17 +20,17 @@
 	<div id="container">
 		
 		<header>
-			<h1>All About Matcha &#127861;</h1>
+			<h1>all about matcha &#127861;</h1>
 			
-			<p class="subtitle">A beginner-friendly guide to matcha.</p>
+			<p class="subtitle">a beginner-friendly guide to matcha</p>
 			
 		<!--navigation bar-->
 		<div class= "topnav">
 			<a href="index.html">Home</a>
 			<a href="about-matcha.html">Matcha</a>
 			<a href="getting-started.html">Getting Started</a>
-			<a href="about-us.html">About Us</a>
 			<a href="contact.html">Contact</a>
+			<a href="about-us.html">About Us</a>
 			
 		</div>
 		</header>
@@ -49,22 +49,33 @@
 				</p>
 				
 				<p>
-					Follow our set-by-step guide where we teach you how to <em>properly</em> make <br>matcha &amp; incorporate it into your morning ritual for a more mindful life! ♡
+					Follow our set-by-step guide where we teach you how to <em>properly</em> make 
+					<br>matcha &amp; incorporate it into your morning ritual for a more mindful life! ♡
 				</p>
 				
 			</div>
 			<div class="clear"></div>
 		</section>
+	
+	<!--pouring matcha gif-->
+		<div class="fun-intro">
+			<img class="img-center" src="images/pouring-matcha.gif" alt="pouring matcha green tea">
 		
-		<!--javascript button-->
-		<button id="matchabutton">make my matcha</button>
+	<!--javascript button-->
+		<button id="matchabutton">what time is it?</button>
 		
-		<p id="matchamessage" class="hidden">
-			It's matcha tiiime! &#127861;
-		</p>
+			<p id="matchamessage" class="hidden">
+				it's matcha tiiime! &#127861;
+			</p>
+			
+		</div>
 		
-		<img class="img-center" src="images/two_matchas.jpeg" alt="two iced matcha lattes">
-		
+		<!--twinkle sound effect-->
+	<audio controls>
+ 		<source id="twinkle" src="assets/twinkle.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+	
 	</div>
 	
 	<!--footer-->
@@ -72,7 +83,9 @@
 			<p>&copy; 2026 ☆ All About Matcha ☆</p>
 		</footer>
 	
-	<script src="script.js"></script>
+	<!--confetti effect and link to javascript file-->
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  	<script src="script.js"></script>
 	
 </body>
 </html>

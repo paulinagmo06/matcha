@@ -15,9 +15,14 @@ header > h1 {
 
 /*navigation bar*/
 .topnav {
-  background-color: #36522A;
-  overflow: hidden;
+ 	background-color: #36522A;
+ 	overflow: hidden;
+	margin-left: auto;
 	border-radius: 6px;
+	
+	
+	display: flex;
+ 	justify-content: flex-end;
 }
 
 .topnav a:link {
@@ -98,8 +103,8 @@ section p {
 /*images (layout and size)*/
 .img-right {
 	float: right;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	margin-right: 20px;
 	border-radius: 11px;
 	border: hidden;
@@ -112,15 +117,52 @@ section p {
   	font-weight: 333px;
   	font-style: normal;
 	line-height: 1.6;
+	text-align: center;
+	color: #2E2C29;
+	
+	background-color: #E6E2BD;
+	border-style: none;
+	
+	width: 60%;
+	padding-left: 50px;
+	padding-top: 15px;
+	margin: 0 auto;
+}
+
+/*images inside the table*/
+img {
+	width: 200px;
+}
+
+/*matcha preparation steps button*/
+#prep-button {
+	font-family: "Fraunces", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 390;
+  	font-style: normal;
+  	font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+#prep-steps {
+	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 333px;
+  	font-style: normal;
+	line-height: 1.6;
 	text-align: justify;
 	color: #2E2C29;
-	align-content: center;
-	background-color: #E6E2BD;
-	border-style: dotted;
+}
+
+.hidden {
+  display: none;
 }
 
 .matcha-video {
-	align-content: center;
+	display: block;
+	float: none;
+	padding-top: 20px;
 }
 
 /*list properties*/
@@ -134,6 +176,19 @@ section p {
 	color: #2E2C29;
 	align-content: center;
 }
+
+/*fav matcha link properties*/
+ol a {
+  color: #36522A;
+  text-decoration: none; 
+  font-weight: 500;
+}
+
+ol a:hover {
+  color: #8F99FB;
+  text-decoration: underline;
+}
+
 
 /*footer*/
 footer {

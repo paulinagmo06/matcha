@@ -26,21 +26,13 @@ body {
 h1 {
 	font-family: "Fraunces", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 650;
   font-style: normal;
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
 	text-align: center;
 	color: #133200;
-}
-
-.subtitle {
-	font-family: "DM Sans", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 333px;
-  	font-style: italic;
-	color: #2E2C29;
 }
 
 /*headings*/
@@ -89,9 +81,14 @@ header:hover .subtitle {
 
 /*navigation bar*/
 .topnav {
-  background-color: #36522A;
-  overflow: hidden;
+ 	background-color: #36522A;
+ 	overflow: hidden;
+	margin-left: auto;
 	border-radius: 6px;
+	
+	
+	display: flex;
+ 	justify-content: flex-end;
 }
 
 .topnav a:link {
