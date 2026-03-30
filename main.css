@@ -1,5 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*custom font*/
+ @font-face { font-family: "Editors Note Text"; src: url("fonts/Editor'sNoteText-Thin.otf"); } 
+ @font-face { font-family: "Editors Note Text"; font-weight: thin; src: url("fonts/Editor'sNoteText-Thin.otf");}
+
 *{
 	box-sizing: border-box;
 }
@@ -11,66 +16,56 @@ html, body {
 body {
 	display: flex;
  	flex-direction: column;
-	background-color: #EDC3CD;
+	background-color: #EEEBE4;
 	color: #0F2503;	
-}
-
-/*containers*/
-#container {
-	width: 2000px;
-	margin: 0 auto;
-	background-color: #FFF6FC;
-	border: 2px solid #8F99FB;
-	border-radius: 8px;
-	padding: 40px;
-}
-
-/*main heading*/
-h1 {
-	font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: 650;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
-	text-align: center;
-	color: #133200;
 }
 
 .subtitle {
 	font-family: "DM Sans", sans-serif;
   	font-optical-sizing: auto;
   	font-weight: 333px;
-  	font-style: italic;
-	color: #2E2C29;
+  	font-style: normal;
+	color: white;
+	background-color: #172C0D;
+	padding: 8px;
+	text-align: center;
+}
+
+/*containers*/
+#container {
+	max-width: 1100px;
+	margin: 0 auto;
+	background-color: transparent;
+	border: none;
+	padding: 40px 20px;
 }
 
 /*navigation bar*/
 .topnav {
- 	background-color: #36522A;
+ 	background-color: #F2C9E8;
  	overflow: hidden;
 	margin-left: auto;
-	border-radius: 6px;
+	border-radius: none;
 	
 	
 	display: flex;
+	flex-direction: row;
  	justify-content: flex-end;
 }
 
 .topnav a:link {
- 	color: #FFF;
+ 	color: black;
  	text-align: center;
  	padding: 15px 16px;
  	text-decoration: none;
-	font-family: "Andale Mono", monospace;
- 	font-size: 17px;
+	font-family: "DM Sans", sans-serif;
+ 	font-size: 18px;
 }
 
 /*change the color of links on hover */
 .topnav a:hover {
-  background-color: #8F99FB;
-  color: #FFF;
+	color: black;
+	text-decoration: underline;
 }
 
 /*add a color to the active/current link */
@@ -81,13 +76,28 @@ h1 {
 
 /*how the link will look when visited*/
 .topnav a:visited {
-	color: #FFDCE2;
+	color: black;
+	text-decoration: underline;
+}
+
+/*main heading*/
+h1 {
+	font-family: "DM Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 50px;
+	text-align: center;
+	color: #172C0D;
+	padding: 15px;
 }
 
 .intro {
   display: flex;
+	flex-direction: column;
+	align-items: center;
   justify-content: center;
-  padding: 60px 20px;        
+  padding: 40px 20px;        
   text-align: center;
 }
 
@@ -95,11 +105,11 @@ h1 {
  	display: flex;
  	align-items: center;
 	justify-content: center;
- 	gap: 5px; /*space between text and star*/
+ 	gap: 1px; /*space between text and star*/
 }
 
 .img-star {
-	width: 80px;
+	max-width: 10%;
  	height: auto;
 	filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.08));
 	transform: rotate(-12deg);
@@ -111,16 +121,16 @@ h1 {
 
 /*headings*/
 h2, h3 {
-  font-family: "Fraunces", serif;
+  font-family: "Editors Note Text", "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 390;
-  font-style: italic;
+  font-style: normal;
+	font-size: 35px;
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
 	text-align: center;
 	color: #133200;
-	padding-top: 10px
 }
 
 .comfort {
@@ -128,17 +138,19 @@ h2, h3 {
   	font-optical-sizing: auto;
   	font-weight: 333px;
   	font-style: normal;
+	font-size: 16px;
 	line-height: 1.6;
 	text-align: center;
 	color: #2E2C29;
 }
 
 /*body paragraphs*/
-section p {
+p {
   	font-family: "DM Sans", sans-serif;
   	font-optical-sizing: auto;
-  	font-weight: 333px;
+  	font-weight: 400px;
   	font-style: normal;
+	font-size: 16px;
 	line-height: 1.6;
 	text-align: justify;
 	color: #2E2C29;
@@ -146,8 +158,9 @@ section p {
 
 /*header*/
 header {
-	font-family: "Andale Mono", monospace;
+	font-family: "DM Sans", sans-serif;
 	text-align: center;
+	color: white;
 }
 
 header > h1 {
@@ -173,7 +186,7 @@ header:hover .subtitle {
 	margin: 0 auto 20px auto;
 	width: 500px;
 	height: 300px;
-	border-radius: 30px;
+	border-radius: 50px;
 }
 
 /*reveal matcha phrase*/
@@ -183,7 +196,7 @@ header:hover .subtitle {
 }
 
 #matchabutton {
-	background-color: #36522A;
+	background-color: #87A47A;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -193,7 +206,8 @@ header:hover .subtitle {
 }
 
 #matchabutton:hover {
-	background-color: #8F99FB;
+	background-color: #F2C9E8;
+	color: #172C0D;
 }
 
 /*footer*/
@@ -203,9 +217,53 @@ footer {
     border-top: 2px;
     padding-top: 10px;
 	padding-bottom: 10px;
-    background-color: #CCC6B9;
+    background-color: #172C0D;
     color: #FFF;
 }
+
+/*mobile query*/
+@media (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .img-center {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*tablet query*/
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .cta-heading {
+    justify-content: flex-start;
+  }
+}
+
+/*laptop or desktop query*/
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .intro {
+    gap: 80px;
+  }
+}
+
 
 /*clear floats*/
 .clear {

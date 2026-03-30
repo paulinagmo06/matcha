@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>All About Matcha ☆</title>
+<title>all about matcha ☆</title>
 	<link rel="stylesheet" href="main.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 	
 	<!--source code for google font-->
@@ -17,23 +20,47 @@
 
 <body>
 	
-	<div id="container">
-		
-		<header>
-			<h1>all about matcha &#127861;</h1>
+	<header>
 			
-			<p class="subtitle">a beginner-friendly guide to matcha</p>
+		<p class="subtitle">a beginner-friendly approach to matcha</p>
+			
 			
 		<!--navigation bar-->
 		<div class= "topnav">
-			<a href="index.html">Home</a>
-			<a href="about-matcha.html">Matcha</a>
-			<a href="getting-started.html">Getting Started</a>
-			<a href="contact.html">Contact</a>
-			<a href="about-us.html">About Us</a>
+			
+			<a href="index.html">home</a>
+			<a href="about-matcha.html">matcha</a>
+			<a href="getting-started.html">getting started</a>
+			<a href="contact.html">contact</a>
+			<a href="about-us.html">about us</a>
+			
+		</div>	
+			
+	</header>
+	
+	<div id="container">
+		
+		<h1>all about matcha ☆</h1>
+		
+		<!--pouring matcha gif-->
+		<div class="fun-intro">
+			<img class="img-center" src="images/pouring-matcha.gif" alt="pouring matcha green tea">
+		
+	<!--javascript button-->
+	<button id="matchabutton">what time is it?</button>
+		
+		<p id="matchamessage" class="hidden">
+			it's matcha tiiime! &#127861;
+		</p>
+			
+			<!-- matcha quote API-->
+	<div class="quote-section">
+		<button id="quote-btn">get matcha wisdom 🍵</button>
+		<p id="quote-text"></p>
+	</div>
+
 			
 		</div>
-		</header>
 		
 		<!--hook/CTA-->
 		<section class="intro">
@@ -45,7 +72,7 @@
 				</div>
 				
 				<p class="comfort">
-					Matcha doesn't have to be complicated.
+					Matcha doesn't have to be complicated. &#127861;
 				</p>
 				
 				<p>
@@ -56,31 +83,20 @@
 			</div>
 			<div class="clear"></div>
 		</section>
-	
-	<!--pouring matcha gif-->
-		<div class="fun-intro">
-			<img class="img-center" src="images/pouring-matcha.gif" alt="pouring matcha green tea">
 		
-	<!--javascript button-->
-		<button id="matchabutton">what time is it?</button>
-		
-			<p id="matchamessage" class="hidden">
-				it's matcha tiiime! &#127861;
-			</p>
-			
-		</div>
 		
 		<!--twinkle sound effect-->
 	<audio controls>
  		<source id="twinkle" src="assets/twinkle.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio>
+		
 	
 	</div>
 	
 	<!--footer-->
 		<footer>
-			<p>&copy; 2026 ☆ All About Matcha ☆</p>
+			<p>&copy; 2026 ☆ all about matcha ☆</p>
 		</footer>
 	
 	<!--confetti effect and link to javascript file-->

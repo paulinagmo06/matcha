@@ -1,12 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*custom font*/
+ @font-face { font-family: "Editors Note Text"; src: url("fonts/Editor'sNoteText-Thin.otf"); } 
+ @font-face { font-family: "Editors Note Text"; font-weight: thin; src: url("fonts/Editor'sNoteText-Thin.otf");}
+
 *{
 	box-sizing: border-box;
 }
 
 body {
-	background-color: #8F99FB;
-	color: #0F2503;
+	background-color: #87A47A;
 }
 
 /*containers*/
@@ -14,7 +18,7 @@ body {
 	width: 1500px;
 	margin: 0 auto;
 	background-color: #FFF6FC;
-	border: 2px solid #EDC3CD;
+	border: none;
 	border-radius: 8px;
 	padding: 40px;
 }
@@ -26,30 +30,30 @@ header > h1 {
 
 /*navigation bar*/
 .topnav {
- 	background-color: #36522A;
+ 	background-color: #F2C9E8;
  	overflow: hidden;
 	margin-left: auto;
-	border-radius: 6px;
+	border-radius: none;
 	
 	
 	display: flex;
+	flex-direction: row;
  	justify-content: flex-end;
 }
 
 .topnav a:link {
- 	float: right;
- 	color: #FFF;
+ 	color: black;
  	text-align: center;
- 	padding: 14px 16px;
+ 	padding: 15px 16px;
  	text-decoration: none;
-	font-family: "Andale Mono", monospace;
- 	font-size: 17px;
+	font-family: "DM Sans", sans-serif;
+ 	font-size: 18px;
 }
 
 /*change the color of links on hover */
 .topnav a:hover {
-  background-color: #8F99FB;
-  color: #FFF;
+	color: black;
+	text-decoration: underline;
 }
 
 /*add a color to the active/current link */
@@ -60,15 +64,17 @@ header > h1 {
 
 /*how the link will look when visited*/
 .topnav a:visited {
-	color: #FFDCE2;
+	color: black;
+	text-decoration: underline;
 }
 
 /*main heading*/
 h1 {
-	font-family: "Fraunces", serif;
+	font-family: "Editors Note Text", "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+	font-size: 40px;
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
@@ -104,7 +110,7 @@ section p {
 }
 
 #sendBtn {
-	background-color: #4CAF50;
+	background-color: #87A47A;
 	color: white;
 	border: none;
 	border-radius: 18px;
@@ -116,5 +122,50 @@ section p {
 }
 
 #sendBtn:hover {
-	background-color: #EA5EF3;
+	background-color: #F2C9E8;
+	color: black;
 }
+
+/*mobile query*/
+@media (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .img-center {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*tablet query*/
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .cta-heading {
+    justify-content: flex-start;
+  }
+}
+
+/*laptop or desktop query*/
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .intro {
+    gap: 80px;
+  }
+}
+
