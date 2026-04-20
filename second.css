@@ -22,7 +22,7 @@ header > h1 {
  	background-color: #F2C9E8;
  	overflow: hidden;
 	margin-left: auto;
-	border-radius: none;
+	border-radius: 0;
 	
 	
 	display: flex;
@@ -121,13 +121,15 @@ section p {
 }
 
 /*images (layout and size)*/
-.img-right {
-	float: right;
-	width: 300px;
-	height: 300px;
-	margin-right: 20px;
-	border-radius: 11px;
-	border: hidden;
+.pick-matcha .content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.pick-matcha img {
+  width: 300px;
+  border-radius: 12px;
 }
 
 /*table style properties*/
@@ -139,7 +141,7 @@ section p {
 .tools-table {
 	font-family: "DM Sans", sans-serif;
   	font-optical-sizing: auto;
-  	font-weight: 333px;
+  	font-weight: 300;
   	font-style: normal;
 	line-height: 1.6;
 	text-align: center;
@@ -148,22 +150,24 @@ section p {
 	background-color: #87A47A;
 	border-style: none;
 	
-	width: 60%;
-	padding-left: 50px;
-	padding-top: 15px;
+	width: 100%;
+	max-width: 800%;
+	display: block;
 	margin: 0 auto;
 }
 
 /*images inside the table*/
-img {
-	width: 200px;
+.tools-table img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
 }
 
 /*matcha preparation steps button*/
 #prep-button {
 	font-family: "Fraunces", serif;
   	font-optical-sizing: auto;
-  	font-weight: 390;
+  	font-weight: 300;
   	font-style: normal;
   	font-variation-settings:
     "SOFT" 0,
@@ -173,7 +177,7 @@ img {
 #prep-steps {
 	font-family: "DM Sans", sans-serif;
   	font-optical-sizing: auto;
-  	font-weight: 333px;
+  	font-weight: 300;
   	font-style: normal;
 	line-height: 1.6;
 	text-align: justify;
@@ -184,17 +188,28 @@ img {
   display: none;
 }
 
-.matcha-video {
-	display: block;
-	float: none;
-	padding-top: 20px;
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 /*list properties*/
 .fav-matcha {
 	font-family: "DM Sans", sans-serif;
   	font-optical-sizing: auto;
-  	font-weight: 333px;
+  	font-weight: 300;
   	font-style: normal;
 	line-height: 1.6;
 	text-align: justify;
@@ -228,10 +243,14 @@ footer {
 
 /*mobile query*/
 @media (max-width: 600px) {
-  .topnav {
+  .pick-matcha .content {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
+  }
+
+  .pick-matcha img {
+    width: 100%;
+    height: auto;
   }
 
   h1 {
@@ -246,11 +265,8 @@ footer {
 
 /*tablet query*/
 @media (min-width: 768px) {
-  .intro {
+  .pick-matcha .content {
     flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    text-align: left;
   }
 
   .cta-heading {

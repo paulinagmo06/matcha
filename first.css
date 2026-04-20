@@ -24,7 +24,13 @@ body {
 	background-color: transparent;
 	border: none;
 	border-radius: 8px;
-	padding: 40px;
+	padding: 20px;
+}
+
+canvas {
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: #F6F3EC;
 }
 
 /*main heading*/
@@ -166,19 +172,34 @@ footer {
 	position: relative;
     text-align: center;
     border-top: 2px;
-    padding-top: 10px;
-	padding-bottom: 10px;
+    padding-top: 8px;
+	padding-bottom: 8px;
     background-color: #172C0D;
     color: #FFF;
 }
 
 /*mobile query*/
 @media (max-width: 600px) {
-  .topnav {
+   .intro,
+  .history,
+  .benefits-section {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
   }
+
+  .intro img,
+  .history img,
+  .benefits-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #container {
+    padding: 20px;
+  }
+}
 
   h1 {
     font-size: 28px;
@@ -186,9 +207,9 @@ footer {
 
   .img-center {
     width: 100%;
-    height: auto;
+	max-width: 300px;
+	height: auto;
   }
-}
 
 /*tablet query*/
 @media (min-width: 768px) {
@@ -205,16 +226,29 @@ footer {
 }
 
 /*laptop or desktop query*/
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 48px;
+@media (min-width: 768px) {
+  .benefits-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .intro {
-    gap: 80px;
+  .benefit-card {
+    width: 45%;
   }
 }
 
+@media (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav a {
+    padding: 10px;
+    width: 100%;
+  }
+}
 
 /*clear floats*/
 .clear {

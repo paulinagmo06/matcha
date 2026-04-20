@@ -5,6 +5,10 @@
  @font-face { font-family: "Editors Note Text"; src: url("fonts/Editor'sNoteText-Thin.otf"); } 
  @font-face { font-family: "Editors Note Text"; font-weight: thin; src: url("fonts/Editor'sNoteText-Thin.otf");}
 
+body, p {
+	margin: 0;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -20,15 +24,19 @@ body {
 	color: #0F2503;	
 }
 
+header {
+	margin: 0;
+	padding: 0;
+}
+
 .subtitle {
 	font-family: "DM Sans", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 333px;
-  	font-style: normal;
 	color: white;
+	font-weight: 300;
 	background-color: #172C0D;
 	padding: 8px;
 	text-align: center;
+	margin: 0;
 }
 
 /*containers*/
@@ -43,14 +51,10 @@ body {
 /*navigation bar*/
 .topnav {
  	background-color: #F2C9E8;
- 	overflow: hidden;
-	margin-left: auto;
-	border-radius: none;
-	
-	
 	display: flex;
-	flex-direction: row;
- 	justify-content: flex-end;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
 }
 
 .topnav a:link {
@@ -94,11 +98,23 @@ h1 {
 
 .intro {
   display: flex;
-	flex-direction: column;
-	align-items: center;
-  justify-content: center;
-  padding: 40px 20px;        
+  flex-direction: column; /* mobile */
+  align-items: center;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .cta-heading {
@@ -148,7 +164,7 @@ h2, h3 {
 p {
   	font-family: "DM Sans", sans-serif;
   	font-optical-sizing: auto;
-  	font-weight: 400px;
+	font-weight: 400;
   	font-style: normal;
 	font-size: 16px;
 	line-height: 1.6;
@@ -167,10 +183,6 @@ header > h1 {
 	margin: 0;
 }
 
-.subtitle {
-	color: #000000;
-}
-
 header:hover .subtitle {
     display: block;
 }
@@ -184,8 +196,8 @@ header:hover .subtitle {
 .img-center {
 	display: block;
 	margin: 0 auto 20px auto;
-	width: 500px;
-	height: 300px;
+	max-width: 100%;
+	height: auto;
 	border-radius: 50px;
 }
 
@@ -213,12 +225,17 @@ header:hover .subtitle {
 /*footer*/
 footer {
 	position: relative;
-    text-align: center;
     border-top: 2px;
-    padding-top: 10px;
-	padding-bottom: 10px;
     background-color: #172C0D;
-    color: #FFF;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.footer {
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /*mobile query*/
