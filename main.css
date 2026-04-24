@@ -29,6 +29,25 @@ header {
 	padding: 0;
 }
 
+.hero {
+  height: 70vh;
+  background: url("images/matchafoam-cover.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+	color: white;
+}
+
 .subtitle {
 	font-family: "DM Sans", sans-serif;
 	color: white;
@@ -37,15 +56,6 @@ header {
 	padding: 8px;
 	text-align: center;
 	margin: 0;
-}
-
-/*containers*/
-#container {
-	max-width: 1100px;
-	margin: 0 auto;
-	background-color: transparent;
-	border: none;
-	padding: 40px 20px;
 }
 
 /*navigation bar*/
@@ -112,9 +122,20 @@ h1 {
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.split img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 25px;
 }
 
 .cta-heading {
@@ -122,17 +143,6 @@ img {
  	align-items: center;
 	justify-content: center;
  	gap: 1px; /*space between text and star*/
-}
-
-.img-star {
-	max-width: 10%;
- 	height: auto;
-	filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.08));
-	transform: rotate(-12deg);
- 	transition: transform 0.3s ease;
-}
-.img-star:hover {
- 	transform: rotate(10deg);
 }
 
 /*headings*/
@@ -208,7 +218,7 @@ header:hover .subtitle {
 }
 
 #matchabutton {
-	background-color: #87A47A;
+	background-color: #172C0D;
 	color: white;
 	padding: 12px 20px;
 	border: none;

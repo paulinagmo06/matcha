@@ -149,16 +149,15 @@ section p {
 	
 	background-color: #87A47A;
 	border-style: none;
+	border-radius: 20px;
 	
-	width: 100%;
-	max-width: 800%;
+	max-width: 100%;
 	display: block;
 	margin: 0 auto;
 }
 
 /*images inside the table*/
 .tools-table img {
-  width: 100%;
   max-width: 150px;
   height: auto;
 }
@@ -230,15 +229,33 @@ ol a:hover {
 }
 
 
+p {
+  	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+	font-weight: 400;
+  	font-style: normal;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	color: white;
+}
+
 /*footer*/
 footer {
 	position: relative;
     text-align: center;
     border-top: 2px;
-    padding-top: 10px;
-	padding-bottom: 10px;
+    padding-top: 8px;
+	padding-bottom: 8px;
     background-color: #172C0D;
     color: #FFF;
+}
+
+.footer {
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /*mobile query*/

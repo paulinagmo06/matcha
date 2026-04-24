@@ -16,52 +16,60 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
 <body>
-	
-	<div id="container">
-		
+
 <header>
-	
-<!--navigation bar-->
-		<div class= "topnav">
-			<a href="index.html">home</a>
-			<a href="about-matcha.html">matcha</a>
-			<a href="getting-started.html">getting started</a>			
-			<a href="contact.html">contact</a>
-			<a href="about-us.html">about us</a>
-		</div>
-	
-	<h1>Contact Us! &#128231;</h1>
-	
-<!--contact form-->
-	<div id="contact">
-	
-	<form class="form">
-		<label for="fname">First name:</label><br>
-  			<input type="text" id="fname" name="fname" value="John"><br>
- 			<label for="lname">Last name:</label><br>
-			<input type="text" id="lname" name="lname" value="Doe"><br>
-		
-		<label for="message">Send us a message!</label><br>
-			<textarea id="message" value="Type your message here"></textarea><br>
-		
-		<label for="email">How can we reach out to you?</label><br>
-			<input type="email" id="email" value="Your email"><br>
-		
-		<label for="checkbox">How did you find us?</label><br>
-			<select id="exposure" name="exposure" multiple>
-  				<option value="instagram">Instagram</option>
-  				<option value="facebook">X (Twitter)</option>
-  				<option value="twitter">Facebook</option>
-  				<option value="browse">Browsing online</option>
-				<option value="friend">Someone told me to check it out</option>
-			</select><br><br>
-  			<input type="send" value="Send" id="sendBtn">
-		
-	</form>
-	</div>
+  <p class="subtitle">a beginner-friendly approach to matcha</p>
+
+  <div class="topnav">
+    <a href="index.html">home</a>
+    <a href="about-matcha.html">matcha</a>
+    <a href="getting-started.html">getting started</a>      
+    <a href="contact.html">contact</a>
+    <a href="about-us.html">about</a>
+  </div>
 	
 </header>
-	</div>
+
+<!-- HERO SECTION -->
+<section class="contact-hero">
+  <div class="overlay"></div>
 	
+	<h1 class="company">all about matcha ☆</h1>
+
+  <div class="contact-content">
+	  
+    <h2>contact us!</h2>
+
+    <form class="form">
+      <label>first name:</label>
+      <input type="text" placeholder="">
+
+      <label>last name:</label>
+      <input type="text" placeholder="">
+
+      <label>send us a message!</label>
+      <textarea placeholder=""></textarea>
+
+      <label>how can we reach out to you?</label>
+      <input type="email" placeholder="">
+
+      <label>how did you find us?</label>
+      <select>
+        <option>Instagram</option>
+        <option>X (Twitter)</option>
+        <option>Facebook</option>
+        <option>Browsing online</option>
+        <option>Friend recommendation</option>
+      </select>
+
+      <button type="submit" id="sendBtn">send</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 ☆ all about matcha ☆</p>
+</footer>
+
 </body>
 </html>

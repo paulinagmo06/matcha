@@ -37,7 +37,7 @@ canvas {
 h1 {
 	font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 450;
   font-style: normal;
 	text-align: left;
 	padding-top: 10px
@@ -62,7 +62,7 @@ h2, h3 {
 section p {
   	font-family: "DM Sans", sans-serif;
   	font-optical-sizing: auto;
-  	font-weight: 333px;
+  	font-weight: 300px;
   	font-style: normal;
 	line-height: 1.6;
 	text-align: justify;
@@ -91,14 +91,11 @@ header:hover .subtitle {
 /*navigation bar*/
 .topnav {
  	background-color: #F2C9E8;
- 	overflow: hidden;
-	margin-left: auto;
-	border-radius: none;
-	
 	
 	display: flex;
-	flex-direction: row;
  	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
 }
 
 .topnav a:link {
@@ -150,6 +147,26 @@ header:hover .subtitle {
 	border-radius: 12px;
 }
 
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.split img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 25px;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
 /*benefits list*/
 .benefits-grid {
 	display: flex;
@@ -162,10 +179,20 @@ header:hover .subtitle {
 	background-color: #87A47A;
 	color: white;
 	padding: 15px;
-	border-radius: 10px;
+	border-radius: 25px;
 	font-family: "DM Sans", sans-serif;
 }
 
+p {
+  	font-family: "DM Sans", sans-serif;
+  	font-optical-sizing: auto;
+	font-weight: 400;
+  	font-style: normal;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	color: white;
+}
 
 /*footer*/
 footer {
@@ -176,6 +203,13 @@ footer {
 	padding-bottom: 8px;
     background-color: #172C0D;
     color: #FFF;
+}
+
+.footer {
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /*mobile query*/
@@ -226,7 +260,7 @@ footer {
 }
 
 /*laptop or desktop query*/
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .benefits-grid {
     flex-direction: row;
     flex-wrap: wrap;
