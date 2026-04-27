@@ -39,13 +39,22 @@ header {
 }
 
 .hero-content {
-  color: white;
+ 	color: white;
+	text-align: center;
 }
 
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
 	color: white;
+}
+
+#matchamessage {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .subtitle {
