@@ -123,18 +123,20 @@ h1 {
 }
 
 .split {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+	display: flex;
+	flex-direction: column;   /*mobile layout*/
+	align-items: center;
+ 	gap: 30px;
+ 	padding: 40px 20px;
+ 	max-width: 1100px;
+ 	margin: 0 auto;
+ 	text-align: center;
 }
 
 .split img {
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
+  height: auto;
   border-radius: 25px;
 }
 
@@ -294,4 +296,25 @@ footer {
 /*clear floats*/
 .clear {
 	clear: both;
+}
+
+@media (min-width: 768px) {
+  .split {
+    flex-direction: row;   /*side by side again*/
+    justify-content: space-between;
+    text-align: left;
+    gap: 60px;
+  }
+
+  .split-image {
+    order: 0; /*reset order*/
+  }
+
+  .split-text {
+    flex: 1;
+  }
+
+  .split-image {
+    flex: 1;
+  }
 }

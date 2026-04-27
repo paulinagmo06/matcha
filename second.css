@@ -18,16 +18,13 @@ header > h1 {
 }
 
 /*navigation bar*/
-.topnav {
+ .topnav {
  	background-color: #F2C9E8;
- 	overflow: hidden;
-	margin-left: auto;
-	border-radius: 0;
-	
-	
 	display: flex;
-	flex-direction: row;
- 	justify-content: flex-end;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
 }
 
 .topnav a:link {
@@ -133,6 +130,10 @@ section p {
 }
 
 /*table style properties*/
+.table-wrapper {
+ 	overflow-x: auto;
+}
+
 .table-caption {
 	color: black;
 	font-style: bold;
@@ -147,19 +148,17 @@ section p {
 	text-align: center;
 	color: white;
 	
-	background-color: #87A47A;
-	border-style: none;
-	border-radius: 20px;
-	
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
+	width: 100%;
+ 	border-collapse: collapse;
+ 	background-color: #87A47A;
+ 	border-radius: 20px;
+ 	overflow: hidden;
 }
 
 /*images inside the table*/
 .tools-table img {
-  max-width: 150px;
-  height: auto;
+ 	width: 100px;
+ 	height: auto;
 }
 
 /*matcha preparation steps button*/
@@ -277,6 +276,20 @@ footer {
   .img-center {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .topnav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
   }
 }
 
