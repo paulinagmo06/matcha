@@ -131,6 +131,7 @@ section p {
 
 /*table style properties*/
 .table-wrapper {
+	width: 100%;
  	overflow-x: auto;
 }
 
@@ -312,6 +313,48 @@ footer {
 
   .intro {
     gap: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .tools-table {
+    border: none;
+  }
+
+  .tools-table thead {
+    display: none;
+  }
+
+  .tools-table tr {
+    display: block;
+    background: #87A47A;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .tools-table td {
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+    color: white;
+    border: none;
+  }
+
+  .tools-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #F2C9E8;
+  }
+
+  .tools-table img {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
   }
 }
 

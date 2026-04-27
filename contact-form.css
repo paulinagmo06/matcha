@@ -41,17 +41,18 @@ body {
 }
 
 .topnav a:hover {
-  text-decoration: underline;
+ 	text-decoration: underline;
 }
 
 /*hero section and background image*/
 .contact-hero {
-  position: relative;
-  height: 100vh;
-  background: url("images/journaling-and-matcha.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 	position: relative;
+ 	min-height: 100vh;
+ 	background: url("images/journaling-and-matcha.jpg") center/cover no-repeat;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	padding: 40px 20px;
 }
 
 /*dark overlay*/
@@ -147,13 +148,30 @@ footer {
 
 /*responsiveness*/
 @media (max-width: 600px) {
+
   .topnav {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
   }
 
-  .contact-content {
-    width: 90%;
+  .topnav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
+
+  .topnav a:last-child {
+    border-bottom: none;
+  }
+
 }
 
+.form {
+  gap: 10px;
+}
+
+.contact-content h2 {
+  font-size: 28px;
+}
